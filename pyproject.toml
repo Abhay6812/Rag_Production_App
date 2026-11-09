@@ -1,0 +1,28 @@
+[project]
+name = "ragproductionapp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Abhay6812", email = "solankeabhay936@gamil.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi>=0.162.2",
+    "inngest>=0.5.20",
+    "llama-index-core>=0.14.25",
+    "llama-index-readers-file>=0.7.0",
+    "openai>=3.46.0",
+    "python-dotenv>=1.2.4",
+    "qdrant-client>=1.20.0",
+    "requests>=2.32.0",
+    "streamlit>=1.67.0",
+    "uvicorn>=0.54.0",
+]
+
+[project.scripts]
+ragproductionapp = "ragproductionapp:main"
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"
